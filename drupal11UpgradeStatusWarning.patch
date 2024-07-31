@@ -1,0 +1,23 @@
+diff --git i/cleverdisplay/cleverdisplay.info.yml w/cleverdisplay/cleverdisplay.info.yml
+index 9e88d66..ba62cfd 100644
+--- i/cleverdisplay/cleverdisplay.info.yml
++++ w/cleverdisplay/cleverdisplay.info.yml
+@@ -3,4 +3,4 @@ description: 'Theming utilities module by Clever age, designed to be used in add
+ type: module
+ dependencies:
+ version: 8.x-1.0
+-core_version_requirement: ^9 || ^10
++core_version_requirement: ^9 || ^10  || ^11
+diff --git i/cleverdrop.info.yml w/cleverdrop.info.yml
+index a873c94..65a6248 100644
+--- i/cleverdrop.info.yml
++++ w/cleverdrop.info.yml
+@@ -3,7 +3,7 @@ type: theme
+ description: 'Base theme by Clever age, provide common tools and minimal html'
+ version: 8.1.0
+ hidden: true
+-core_version_requirement: ^9 || ^10
++core_version_requirement: ^9 || ^10 || ^11
+ base theme: false
+ 
+ libraries:

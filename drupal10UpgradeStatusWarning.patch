@@ -1,0 +1,44 @@
+diff --git c/cleverdisplay/cleverdisplay.info.yml w/cleverdisplay/cleverdisplay.info.yml
+index 45d2623..9e88d66 100644
+--- c/cleverdisplay/cleverdisplay.info.yml
++++ w/cleverdisplay/cleverdisplay.info.yml
+@@ -1,7 +1,6 @@
+ name: Cleverdisplay
+ description: 'Theming utilities module by Clever age, designed to be used in addition with cleverdrop base theme'
+ type: module
+-core: 8.x
+ dependencies:
+ version: 8.x-1.0
+-core_version_requirement: ^8 || ^9
++core_version_requirement: ^9 || ^10
+diff --git c/cleverdrop.info.yml w/cleverdrop.info.yml
+index ada580b..a873c94 100644
+--- c/cleverdrop.info.yml
++++ w/cleverdrop.info.yml
+@@ -2,9 +2,8 @@ name: Cleverdrop
+ type: theme
+ description: 'Base theme by Clever age, provide common tools and minimal html'
+ version: 8.1.0
+-core: 8.x
+ hidden: true
+-core_version_requirement: ^8 || ^9
++core_version_requirement: ^9 || ^10
+ base theme: false
+ 
+ libraries:
+diff --git c/templates/form/form_input/select.html.twig w/templates/form/form_input/select.html.twig
+index a56a692..cca5860 100644
+--- c/templates/form/form_input/select.html.twig
++++ w/templates/form/form_input/select.html.twig
+@@ -1,4 +1,4 @@
+-{% spaceless %}
++{% apply spaceless %}
+   <select{{ attributes }}>
+     {% for option in options %}
+       {% if option.type == 'optgroup' %}
+@@ -12,4 +12,4 @@
+       {% endif %}
+     {% endfor %}
+   </select>
+-{% endspaceless %}
++{% endapply %}
